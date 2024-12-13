@@ -72,4 +72,4 @@ sudo sh scripts/upgrade_aws_cli_v2.sh
 echo "#################"
 echo "Application Start"
 echo "#################"
-streamlit run main.py --server.port 8080
+streamlit run main.py --server.port 8080 --server.enableCORS false --server.enableXsrfProtection false --server.enableWebsocketCompression=false
