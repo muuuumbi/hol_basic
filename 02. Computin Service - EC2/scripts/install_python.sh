@@ -56,7 +56,7 @@ echo "Git & Code Install"
 echo "##################"
 sudo yum install git -y
 cd /root/
-sudo git clone https://github.com/sh1517/streamlit-project.git
+sudo git clone https://github.com/CJ-CloudWave-Public-Hands-on-Lab/streamlit-project.git
 
 echo "######################"
 echo "Python Package Install"

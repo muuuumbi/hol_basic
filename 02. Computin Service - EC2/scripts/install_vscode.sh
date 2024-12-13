@@ -1,10 +1,10 @@
 #!/bin/bash
 # Set environment variables
 AWS_REGION="ap-northeast-2"
-AWS_ACCOUNT_ID="602229900482"
+AWS_ACCOUNT_ID="************"
 USER_EMAIL="cj-cloud-wave@workshops.aws"
 USER_NAME="Workshop Public Cloud"
-PASSWORD="CJ_CloudWave2025!!"
+PASSWORD="***************"
 HOMEFOLDER="/Workshop"
 
 # Update package lists
@@ -96,6 +96,7 @@ sudo systemctl enable --now code-server@ubuntu
 # }
 # EOF
 
+sudo npm install npm -y
 sudo tee /home/ubuntu/.config/code-server/config.yaml <<EOF
 bind-addr: 0.0.0.0:8080
 cert: false
@@ -147,6 +148,7 @@ sudo -u ubuntu --login code-server --install-extension ms-toolsai.jupyter --forc
 sudo -u ubuntu --login code-server --install-extension ms-python.python --force
 sudo -u ubuntu --login code-server --install-extension donjayamanne.python-extension-pack --force
 sudo -u ubuntu --login code-server --install-extension tht13.python --force
+sudo -u ubuntu --login code-server --install-extension Equinusocio.vsc-material-theme --force
 sudo chown ubuntu:ubuntu /home/ubuntu -R
 
 # Install CDK
