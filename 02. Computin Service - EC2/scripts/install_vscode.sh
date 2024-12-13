@@ -1,10 +1,10 @@
 #!/bin/bash
 # Set environment variables
 AWS_REGION="ap-northeast-2"
-AWS_ACCOUNT_ID="************"
+AWS_ACCOUNT_ID="602229900482"
 USER_EMAIL="cj-cloud-wave@workshops.aws"
 USER_NAME="Workshop Public Cloud"
-PASSWORD="***************"
+PASSWORD="CJ_CloudWave2025!!"
 HOMEFOLDER="/Workshop"
 
 # Update package lists
