@@ -1,8 +1,33 @@
 ## AMI(Amazon Machine Image) 생성 및 EC2 생성
 
-<!-- NOTE:: 여기에 rc.local 파일 설정하는 내용 추가하기 -->
+### 1. Web Application 자동 재실행 설정
 
-### 1. Web Server AMI 생성
+> 시스템이 재부팅 되어도 자동으로 재실행 될 수 있도록 system deamon 설정
+
+#### 1.1 Web Server 접속
+
+- VS Code Terminal에서 ssh 명령을 통해 Web Server 접속
+
+    ```bash
+    ssh web-server
+    ```
+
+#### 1.2 rc.local 파일 설정 스크립트 실행
+
+- `streamlit-project` 폴더 이동
+
+    ```bash
+    cd /root/streamlit-project
+    ```
+
+- `setting_rc-local.sh` 파일 스크립트 실행
+
+    ```bash
+    sh scripts/setting_rc-local.sh
+    ```
+
+
+### 2. Web Server AMI 생성
 
 - **EC2 콘솔 메인 화면 → `인스턴스 리소스` 탭 → `lab-edu-ec2-web` 선택 → `작업` → `이미지 및 템플릿` → `이미지 생성` 클릭**
 
@@ -63,6 +88,10 @@
         - Value: lab-edu-ec2-web
 
     - `고급 세부 정보` 확장 → IAM 인스턴스 프로파일: `lab-edu-role-ec2`
+
+    - `호스트 이름 유형` → `IP 이름` 선택
+
+    - `리소스 기반 IPv4(A레코드) DNS 요청 활성화` 선택
 
     - `시작 템플릿 생성` 버튼 클릭
 
