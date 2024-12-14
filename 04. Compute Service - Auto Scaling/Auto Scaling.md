@@ -167,9 +167,21 @@
 
     - `Auto Scaling 생성` 버튼 클릭
 
-<!-- ### 3. Web Service 접속 및 Auto Scaling Out 테스트
+### 3. Web Service 접속 및 Auto Scaling Out 테스트
 
-- 웹 서비스 접속 (*https://www.stxx.cj-cloud-wave.com*)
+#### 3.1 Application Load Balancer 접속 정보 확인
+
+- 인스턴스 메인 콘솔 화면 이동 → `로드밸런서` 탭 → `lab-edu-alb-web` DNS 이름 주소 복사 버튼 클릭
+
+#### 3.2 Web Application 접속
+
+> <span style="color:green">**※ NOTE:**</span> 로드밸런서 DNS 정보로 브라우저에서 접속
+
+- 서비스 접속 후 `EC2 Instance Information` 테이블 정보에서 Name 값 `lab-edu-asg-web` 인지 확인
+
+    ![alt text](./img/asg_access_test.png)
+
+#### 3.3 Auto Scaling Out 테스트
 
 - 서버 부하 발생을 위해 'Stress Tool' 클릭
 
@@ -185,4 +197,4 @@
 
 - '인스턴스 관리' 탭으로 이동 → 신규 EC2 확인
 
-    ![alt text](./img/asg_09.png) -->
+    ![alt text](./img/asg_09.png)
