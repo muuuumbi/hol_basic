@@ -55,7 +55,7 @@ echo "##################"
 echo "Git & Code Install"
 echo "##################"
 sudo yum install git -y
-cd /root/
+sudo cd /root/
 sudo git clone https://github.com/CJ-CloudWave-Public-Hands-on-Lab/streamlit-project.git
 
 echo "######################"
@@ -72,4 +72,5 @@ sudo sh scripts/upgrade_aws_cli_v2.sh
 echo "#################"
 echo "Application Start"
 echo "#################"
-streamlit run main.py --server.port 8080 --server.enableCORS false --server.enableXsrfProtection false --server.enableWebsocketCompression=false
+# streamlit run main.py --server.port 8080 --server.enableCORS false --server.enableXsrfProtection false --server.enableWebsocketCompression=false
+streamlit run main.py --server.port 80

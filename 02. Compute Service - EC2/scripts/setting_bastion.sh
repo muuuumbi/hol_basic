@@ -61,7 +61,7 @@ http {
         root         /usr/share/nginx/html;
 
         location / { 
-            proxy_pass http://$WEB_PRIVATE_IP:8080;
+            proxy_pass http://$WEB_PRIVATE_IP:80;
             proxy_http_version 1.1;
             proxy_set_header Upgrade \$http_upgrade;
             proxy_set_header Connection 'upgrade';
