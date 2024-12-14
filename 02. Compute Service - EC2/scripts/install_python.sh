@@ -54,8 +54,8 @@ sudo dnf install stress -y
 echo "##################"
 echo "Git & Code Install"
 echo "##################"
+cd /root/
 sudo yum install git -y
-sudo cd /root/
 sudo git clone https://github.com/CJ-CloudWave-Public-Hands-on-Lab/streamlit-project.git
 
 echo "######################"
