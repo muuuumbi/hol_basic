@@ -13,6 +13,12 @@
 - vs code 사용자 데이터(init script) 사진 수정
 - vs code 접속 사진 캡처해서 반영하기
 - vs code로 putty 파일 업로드 기능 이용해서 파일 업로드 하는 방법 수정하기
-- 
+
 
 - streamlit 저장소 옮기기
+
+
+
+
+- SSM Patch Manager
+- https://dev.classmethod.jp/articles/lim-ssm-patch-manager/
