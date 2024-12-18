@@ -183,7 +183,7 @@
 
 #### 3.3 Auto Scaling Out 테스트
 
-- 서버 부하 발생을 위해 'Stress Tool' 클릭
+- 서버 부하 발생을 위해 `Stress Tool` 클릭
 
     ![alt text](./img/asg_06.png)
 
