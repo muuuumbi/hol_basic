@@ -1,3 +1,13 @@
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Load Balancer 생성](#load-balancer-생성)
+  - [1. Security Group 생성](#1-security-group-생성)
+  - [2. Load Balancer Target Group 생성](#2-load-balancer-target-group-생성)
+  - [3. Load Balancer 생성](#3-load-balancer-생성)
+- [Load Balancer DNS 정보로 웹 서비스 접속 테스트](#load-balancer-dns-정보로-웹-서비스-접속-테스트)
+  - [1 Application Load Balancer 접속 정보 확인](#1-application-load-balancer-접속-정보-확인)
+  - [2 Web Application 접속 테스트](#2-web-application-접속-테스트)
+
 ## Load Balancer 생성
 
 ### 1. Security Group 생성
@@ -69,15 +79,15 @@
 
     - 나머지 설정은 **Default** 값으로 유지하고 `로드 밸런서 생성` 버튼 클릭
 
-### 4. Load Balancer DNS 정보로 웹 서비스 접속 테스트
+## Load Balancer DNS 정보로 웹 서비스 접속 테스트
 
-#### 4.1 Application Load Balancer 접속 정보 확인
+### 1 Application Load Balancer 접속 정보 확인
 
 - 인스턴스 메인 콘솔 화면 이동 → `로드밸런서` 탭 → `lab-edu-alb-web` DNS 이름 주소 복사 버튼 클릭
 
     ![alt text](./img/lb_dns_copy.png)
 
-#### 4.2 Web Application 접속 테스트
+### 2 Web Application 접속 테스트
 
 > <span style="color:green">**※ NOTE:**</span> 로드밸런서 DNS 정보로 브라우저에서 접속
 

@@ -1,3 +1,18 @@
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [AMI(Amazon Machine Image) 생성 및 EC2 생성](#amiamazon-machine-image-생성-및-ec2-생성)
+  - [1. Web Application 자동 재실행 설정](#1-web-application-자동-재실행-설정)
+    - [1.1 Web Server 접속](#11-web-server-접속)
+    - [1.2 rc.local 파일 설정 스크립트 실행](#12-rclocal-파일-설정-스크립트-실행)
+  - [2. Web Server AMI 생성](#2-web-server-ami-생성)
+- [Auto Scaling 생성 및 Application Load Balancer 연동](#auto-scaling-생성-및-application-load-balancer-연동)
+  - [1. 시작 템플릿(Launch Template) 생성](#1-시작-템플릿launch-template-생성)
+  - [2. Auto Scaling Group 생성](#2-auto-scaling-group-생성)
+  - [3. Web Service 접속 및 Auto Scaling Out 테스트](#3-web-service-접속-및-auto-scaling-out-테스트)
+    - [3.1 Application Load Balancer 접속 정보 확인](#31-application-load-balancer-접속-정보-확인)
+    - [3.2 Web Application 접속](#32-web-application-접속)
+    - [3.3 Scale Out 테스트](#33-scale-out-테스트)
+
 ## AMI(Amazon Machine Image) 생성 및 EC2 생성
 
 ### 1. Web Application 자동 재실행 설정
@@ -181,7 +196,7 @@
 
     ![alt text](./img/asg_access_test.png)
 
-#### 3.3 Auto Scaling Out 테스트
+#### 3.3 Scale Out 테스트
 
 - 서버 부하 발생을 위해 `Stress Tool` 클릭
 
